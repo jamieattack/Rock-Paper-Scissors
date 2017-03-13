@@ -1,35 +1,38 @@
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
+var compare
 if (computerChoice < 0.34) {
 	computerChoice = "rock";
 } else if(computerChoice <= 0.67) {
 	computerChoice = "paper";
 } else {
 	computerChoice = "scissors";
-} console.log("Computer: " + computerChoice)
-console.log("UserChoice: " + userChoice)
+} document.write("Computer: " + computerChoice)
+document.write("UserChoice: " + userChoice)
 
 var compare = function(userChoice, computerChoice){
   if(userChoice === computerChoice) {
-    console.log ("The result is a tie")
+     result =("The result is a tie")
     } 
       else if(userChoice === "rock" && computerChoice ==="paper"){
- 		console.log("paper wins")
+ 		 result=("paper wins")
  	}
- 	  else if(userChoice === "rock" && computerChoice ==="scissors"){
- 		console.log("rock wins")
+ 	  else if(userChoice === "rock" && computerChoice =="scissors"){
+ 		 result =("rock wins")
  	}
- 	  else if(userChoice === "paper" && computerChoice === "rock"){
- 	  	console.log("paper wins")
+ 	  else if(userChoice === "paper" && computerChoice == "rock"){
+ 	  	 result =("paper wins")
  	}
- 	  else if(userChoice ==="paper" && computerChoice === "scissors"){
- 	  	console.log("scissors wins")
+ 	  else if(userChoice ==="paper" && computerChoice == "scissors"){
+ 	  	 result =("scissors wins")
  	}
- 	  else if(userChoice ==="scissors" && computerChoice === "rock"){
- 	  	console.log("rock wins")
+ 	  else if(userChoice ==="scissors" && computerChoice == "rock"){
+ 	  	result =("rock wins")
  	}
- 	  else if(userChoice === "scissors" && computerChoice === "paper"){
- 	  	console.log("scissors wins")
- 	}
+ 	  else if(userChoice === "scissors" && computerChoice == "paper"){
+ 	  	 result =("scissors wins")
+ 	} console.log(result)
  }
- console.log(compare)
+
+
+
